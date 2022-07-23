@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    tools:context=".HomeActivity">
+
+
+    <Button
+        android:id="@+id/btn_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="500dp"
+        android:padding="10dp"
+        android:text="popup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:layout_below="@+id/btn_popup"
+        android:id="@+id/btn_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+
+        android:padding="10dp"
+        android:text="read"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+ <!--   <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp" />-->
+
+<!--
+
+    <ImageView
+        android:id="@+id/clock"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="184dp"
+        android:background="@color/orange"
+        android:src="@drawable/ic_baseline_access_time_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent" />
+-->
+
+<!--    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:hint="time"
+        app:layout_constraintBottom_toTopOf="@+id/btn_popup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent" />-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="4dp"
+        android:elevation="5dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:logo="@drawable/ic_baseline_home_24"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Home Activity"
+        app:titleMarginStart="30dp">
+
+    </androidx.appcompat.widget.Toolbar>
+    p
+      <FrameLayout
+          android:id="@+id/fragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/botton_navigation"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@color/orange"
+        app:itemTextColor="@color/black"
+        app:labelVisibilityMode="selected"
+        app:menu="@menu/iteam_menu" />
+
+</RelativeLayout>

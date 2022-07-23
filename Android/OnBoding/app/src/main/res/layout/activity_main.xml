@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Material component" />
+
+<androidx.core.widget.NestedScrollView
+    android:layout_below="@id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_above="@id/bottem_navigation_view"
+    android:layout_height="match_parent">
+
+
+
+
+    <FrameLayout
+        android:id="@+id/fragmwnt_contener"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottem_navigation_view"
+       >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+     <androidx.viewpager.widget.ViewPager
+         android:layout_margin="10dp"
+         android:id="@+id/view_pager"
+         android:layout_width="match_parent"
+         android:layout_height="200dp">
+
+     </androidx.viewpager.widget.ViewPager>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="5dp"
+        android:id="@+id/recycler_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
+    </FrameLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>
+
+    
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottem_navigation_view"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="selected"
+        app:menu="@menu/iteam_menu" />
+
+
+
+
+</RelativeLayout>

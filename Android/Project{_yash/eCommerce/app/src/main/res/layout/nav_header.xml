@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/background"
+        android:layout_height="150dp">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="4dp"
+            android:layout_width="70dp"
+            android:layout_height="75dp"
+            android:layout_above="@+id/login"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/img_1"
+            android:src="@drawable/profile" >
+
+            <ImageView
+                android:src="@drawable/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/amita_bold"
+            android:layout_marginStart="20dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="Log in . Sign Up"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/login">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_cat"
+            app:cardUseCompatPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/categories"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shop by Categories"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/amita_bold"
+                    android:layout_marginStart="20sp"/>
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_order"
+            app:cardUseCompatPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/dropbox"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Orders"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/amita_bold"
+                    android:layout_marginStart="20sp"/>
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/contactus"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            android:textColor="@color/lightblack"
+            android:text="CONATCT US"/>
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/legal"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            android:textColor="@color/lightblack"
+            android:text="LEGAL"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

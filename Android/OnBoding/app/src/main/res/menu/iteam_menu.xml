@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="settings"/>
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="search"/>
+
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="home"/>
+
+    <item
+        android:id="@+id/action_notification"
+        android:icon="@drawable/ic_baseline_notifications_active_24"
+        android:title="notification"/>
+
+    <item
+        android:id="@+id/action_balance"
+        android:icon="@drawable/ic_baseline_account_balance_wallet_24"
+        android:title="balnce"/>
+
+    <item
+        android:id="@+id/actoin_profile"
+        android:icon="@drawable/ic_baseline_profile_24"
+        android:title="profile"/>
+
+
+
+</menu>

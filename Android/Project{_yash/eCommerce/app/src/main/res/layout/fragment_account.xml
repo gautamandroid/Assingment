@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.AccountFragment">
+
+   <View
+       android:id="@+id/view"
+       android:layout_width="match_parent"
+       android:layout_height="100dp"
+       android:background="#787676"/>
+
+    <ImageView
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/iv_profile"
+        android:scaleType="fitXY"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:src="@drawable/profilepic"/>
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/btn_login"
+       android:backgroundTint="@color/pink"
+        android:layout_gravity="end"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="40dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="LogIn/SignUp" />
+
+    <View
+        android:layout_marginTop="180dp"
+        android:background="#EFEFEF"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_margin="20dp"
+            android:src="@drawable/dropbox"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="Orders"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="280dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_margin="20dp"
+            android:src="@drawable/question"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="Help Center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="360dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_margin="20dp"
+            android:src="@drawable/like"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="Wishlist"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
